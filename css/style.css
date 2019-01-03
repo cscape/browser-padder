@@ -1,0 +1,159 @@
+#fileElem {
+  display: none;
+  visibility: hidden;
+}
+
+.logo {
+  flex-grow: 0;
+  width: auto;
+  margin: -5pt 0 -5pt -8pt;
+  height: 28pt;
+  display: block;
+  vertical-align: text-top;
+}
+
+#app {
+  font-family: -apple-system, Roboto, 'Segoe UI', Helvetica Neue, Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+}
+#app .title-bar {
+  position: relative;
+  background-color: #111111;
+}
+#app .title-bar h1 {
+  max-width: 480pt;
+  padding: 10pt 12pt;
+  margin: 0 auto;
+  color: #EFEFEF;
+  font-weight: 400;
+  height: 38pt;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  display: flex;
+}
+#app .title-bar h1 span {
+  flex-shrink: 0;
+}
+#app .top-bar {
+  background-color: #111111;
+}
+#app .top-bar .controls {
+  max-width: 480pt;
+  position: relative;
+  padding: 10pt 12pt;
+  display: flex;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#app .top-bar .controls .inner {
+  margin: 0 0 0 auto;
+  display: inline-block;
+  width: auto;
+}
+#app .top-bar .label {
+  border: 0;
+  display: inline-block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  background-color: #00CEA6;
+  text-transform: uppercase;
+  line-height: 1.125rem;
+  padding: 6pt 8pt;
+  font-size: 1.125rem;
+  font-weight: 600;
+  box-shadow: 0pt 0pt #005E50;
+  transition: all 150ms ease;
+}
+#app .top-bar .label:hover {
+  box-shadow: 3pt 3pt #005E50;
+  background-color: #41DABC;
+  color: #005E50;
+}
+#app .file-listing {
+  flex: 1 1;
+  max-height: 100%;
+  overflow-y: auto;
+}
+#app .file-listing #fileList {
+  display: flex;
+  flex-direction: column;
+}
+#app .file-listing #fileList span {
+  text-align: center;
+  padding: 12pt 18pt;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 300;
+  margin: auto;
+  color: #AAA;
+}
+#app .file-listing .image-block-row {
+  max-width: 480pt;
+  margin: 0 auto 12pt auto;
+  align-self: center;
+}
+#app .file-listing .image-block-row:first-of-type {
+  margin-top: 12pt;
+}
+#app .file-listing .image-block-row .image-block {
+  display: block;
+  padding: 0 12pt;
+  max-width: 480pt;
+}
+#app .file-listing .image-block-row .image-block .image-padded {
+  display: block;
+  max-width: 100%;
+}
+
+#RatioElement {
+  background-color: #FCE100;
+  border: 0;
+  display: inline-block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  line-height: 1.125rem;
+  padding: 6pt 8pt;
+  margin-right: 8pt;
+  font-size: 1.125rem;
+  font-weight: 600;
+  box-shadow: 0pt 0pt #C19C00;
+  transition: all 150ms ease;
+}
+#RatioElement:hover {
+  box-shadow: 3pt 3pt #C19C00;
+  background-color: #FFF100;
+  color: #986F0B;
+}
+
+#fileSelect {
+  display: inline-block;
+}
+
+#fileList {
+  background-color: #1F1F1F;
+  max-width: 480pt;
+  margin: 0 auto;
+  min-height: 100%;
+}

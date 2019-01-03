@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Browser-Based Image Padding Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div id="app">
+  <header class="title-bar">
+    <h1><img class="logo" src="https://cyberscape.co/press-kit/white/transparent-700x.png"/></h1>
+  </header>
+  <div class="file-listing">
+    <div id="fileList"><span>Your padded images will appear here</span></div>
+  </div>
+  <nav class="top-bar">
+    <div class="controls">
+      <div class="inner">
+        <select id="RatioElement"></select><a id="fileSelect" href="#">
+          <button class="label">Select Images</button></a>
+      </div>
+    </div>
+  </nav>
+</div>
+<template id="ImageTemplateBlock">
+  <div class="image-block-row"><a class="image-block"><img class="image-padded"/></a></div>
+</template>
+<input id="fileElem" type="file" multiple="multiple" accept="image/*"/>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
